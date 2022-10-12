@@ -17,27 +17,15 @@ public class Camera {
         this.rotationHorizontal = rotationHorizontal;
     }
 
-    public void setLocationPointX(Integer locationPointX) {
-        this.locationPointX = locationPointX;
-    }
-
-    public void setLocationPointY(Integer locationPointY) {
-        this.locationPointY = locationPointY;
-    }
-
-    public void setLocationPointZ(Integer locationPointZ) {
-        this.locationPointZ = locationPointZ;
-    }
-
-    public void setRotationVertical(Integer rotationVertical) {
-        this.rotationVertical = rotationVertical;
-    }
-
-    public void setRotationHorizontal(Integer rotationHorizontal) {
+    public void rotateCamera(Integer rotationGradeVertical, Integer rotationHorizontal){
+        this.rotationVertical = rotationGradeVertical;
         this.rotationHorizontal = rotationHorizontal;
     }
 
-
-
+    public void moveCamera(Integer locationPointX, Integer locationPointY, Integer locationPointZ){
+        this.locationPointX = locationPointX;
+        this.locationPointY = locationPointY;
+        this.locationPointZ = locationPointZ;
+    }
 
 }

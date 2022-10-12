@@ -21,15 +21,12 @@ public class Light {
     public void setBrightness(Integer brightness) {
         this.brightness = brightness;
     }
-    public void setLocationPointX(Integer locationPointX) {
+
+
+    public void moveLight(Integer locationPointX, Integer locationPointY, Integer locationPointZ) {
         this.locationPointX = locationPointX;
-    }
-    public void setLocationPointY(Integer locationPointY) {
         this.locationPointY = locationPointY;
-    }
-    public void setLocationPointZ(Integer locationPointZ) {
         this.locationPointZ = locationPointZ;
     }
-
     
 }
