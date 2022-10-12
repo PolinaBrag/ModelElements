@@ -27,7 +27,6 @@ public class Light {
         this.brightness = brightness;
     }
 
-
     public void moveLight(Integer locationPointX, Integer locationPointY, Integer locationPointZ) {
         this.locationPointX = locationPointX;
         this.locationPointY = locationPointY;
