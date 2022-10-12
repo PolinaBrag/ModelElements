@@ -7,14 +7,16 @@ public class Camera {
     Integer locationPointZ;
     Integer rotationVertical;
     Integer rotationHorizontal;
+    Integer zoom;
     
     public Camera(Integer locationPointX, Integer locationPointY, Integer locationPointZ, Integer rotationVertical,
-            Integer rotationHorizontal) {
+            Integer rotationHorizontal, Integer zoom) {
         this.locationPointX = locationPointX;
         this.locationPointY = locationPointY;
         this.locationPointZ = locationPointZ;
         this.rotationVertical = rotationVertical;
         this.rotationHorizontal = rotationHorizontal;
+        this.zoom = zoom;
     }
 
     public void rotateCamera(Integer rotationGradeVertical, Integer rotationHorizontal){
@@ -26,6 +28,10 @@ public class Camera {
         this.locationPointX = locationPointX;
         this.locationPointY = locationPointY;
         this.locationPointZ = locationPointZ;
+    }
+    
+    public void setZoom(Integer zoom) {
+        this.zoom = zoom;
     }
 
 }
